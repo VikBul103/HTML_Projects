@@ -1,0 +1,97 @@
+@import url('reset.css');
+
+/* My classes*/
+
+.box {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.box div {
+  outline: 1px solid red;
+  vertical-align: top;
+}
+
+.third-block-top {
+  height: 200px;
+}
+
+.third-block-bottom {
+  font-size: 0px;
+}
+
+.third-block-bottom > div {
+  font-size: 20px;
+  width: 400px;
+  height: 200px;
+  float:left
+}
+
+.third-block-bottom > div + div > div {
+  height: 100px;
+}
+
+.cell-desc {
+  margin: 0 0 10px;
+  height: 60px;
+  overflow: hidden;
+}
+
+/*floats*/
+
+.float-first-parent {
+  background-color: green;
+}
+
+.float-first-parent > div {
+  outline: 2px solid red;
+  font-size: 20px;
+  height: 400px;
+  width: 400px;
+  float: left;
+}
+
+.float-second-parent {
+  background-color: aqua;
+}
+
+.float-second-parent > div {
+  font-size: 20px;
+  float: left;
+  width: 800px;
+  height: 400px;
+}
+
+.float-second-parent > div + div {
+  width: 400px;
+}
+
+.first-section > div {
+  height: 200px;
+}
+
+.second-section > div {
+  height: 133px;
+}
+
+.float-third-parent {
+  background-color: blueviolet;
+}
+
+.float-third-parent > div {
+  outline: 2px solid red;
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+
+.float-third-parent > div + div {
+  width: 800px;
+  height: auto;
+}
+
+.clearfix::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
