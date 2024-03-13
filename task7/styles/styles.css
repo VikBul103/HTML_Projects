@@ -1,0 +1,276 @@
+@import url('reset.css');
+
+/* !GLOBAL */
+body {
+	font-family: "Roboto", sans-serif;
+	color: #212121;
+	letter-spacing: .9px;
+	/* font-weight: 400;
+	font-size: 16px; */
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+/* ? HEADER */
+
+.header {
+	padding: 24px 0 25px;
+	border-bottom: 1px solid #ECECEC;
+	font-size: 14px;
+	font-weight: 500;
+}
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.header-logo {
+	margin-right: 93px;
+}
+.header-menu {
+	display: flex;
+	gap: 50px;
+	margin-right: auto;
+}
+.header-menu-item a {
+	color: #212121;
+	text-decoration: none;
+}
+.header-menu-item a:hover {
+	color: #2196F3;
+}
+.header-menu-item a.active {
+	color: #2196F3;
+}
+.header-list {
+	display: flex;
+	gap: 50px;
+}
+.header-list-item a {
+	color: #757575;
+	text-decoration: none;
+}
+.header-list-item a:hover {
+	color: #2196F3;
+}
+
+/* ? MAIN */
+
+.main {
+	padding: 94px 0 94px;
+	border-bottom: 1px solid #ECECEC;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.main-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.portfolio-list {
+	display: flex;
+	margin: 0 0 50px;
+	gap: 8px;
+}
+
+.portfolio-list-item {
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+	background: #fff;
+	border-radius: 4px;
+  	padding: 4px 24px;
+  	color: #7e7e7e;
+  	background-color: #F5F4FA
+}
+
+.portfolio-list-item a {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 162%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #212121;
+	text-decoration: none;
+}
+.portfolio-list-item:hover {
+	background: #2196F3;
+}
+.portfolio-list-item.active {
+	background: #2196F3;
+}
+
+.portfolio-list-item a:hover {
+	color: white;
+}
+.portfolio-list-item a.active {
+	color: white;
+}
+
+.portfolio-content-block {
+	display: flex;
+	gap: 30px;
+	text-align: left;
+	margin: 0 0 30px;
+}
+
+.portfolio-content-item {
+	flex: 1 1 20%;
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+	background: #fff;
+	padding: 0 0 30px;
+}
+
+.portfolio-content-item p {
+	padding: 0 0 0 30px;
+}
+
+.portfolio-content-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.portfolio-content-desc {
+	color: #757575;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.portfolio-img {
+	width: 100%;
+	height: 294px;
+	object-fit: cover;
+	padding: 0 0 30px;
+}
+
+/* ? FOOTER */
+.footer {
+	padding: 60px 0;
+	background: #2f303a;
+	font-size: 14px;
+}
+.footer-logo {
+	display: inline-block;
+	margin: 0 0 20px;
+}
+.footer-address {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	gap: 9px;
+}
+.footer-address p {
+	color: #fff;
+}
+.footer-address a {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+.footer-address a:hover {
+	color: #2196F3;
+}
+
+/* My classes*/
+.box {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.box div {
+  outline: 1px solid red;
+  vertical-align: top;
+}
+
+.first-block {
+  font-size: 0px;
+  background-color: gold;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-block > div {
+  font-size: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.second-block {
+  font-size: 0px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-block > div {
+  font-size: 20px;
+  width: 800px;
+  height: 400px;
+}
+
+.second-block > div + div {
+  width: 400px;
+}
+
+.first-section > div {
+  height: 200px;
+}
+
+.second-section > div {
+  height: 133px;
+}
+
+.third-block {
+  font-size: 0px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-block > div {
+  font-size: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.third-block > div + div {
+  width: 800px;
+  height: auto;
+}
+
+.third-block-top {
+  height: 200px;
+}
+
+.third-block-bottom {
+  font-size: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-block-bottom > div {
+  font-size: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+.third-block-bottom > div + div > div {
+  height: 100px;
+}
+
+.cell-desc {
+  margin: 0 0 10px;
+  height: 90px;
+  overflow: hidden;
+}
+
